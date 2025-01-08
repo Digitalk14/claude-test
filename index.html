@@ -28,9 +28,31 @@
         }
         h2 {
             color: #666;
+            margin-top: 30px;
         }
         p {
             color: #444;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -39,7 +61,23 @@
     <div class="content">
         <h2>About</h2>
         <p>This is a simple welcome page created with Claude's help.</p>
-        <p>This page demonstrates a basic HTML structure that we'll enhance with CSS later.</p>
+        <p>This page demonstrates a basic HTML structure with enhanced styling and additional sections.</p>
+        
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li>Clean and modern design</li>
+            <li>Responsive layout</li>
+            <li>Easy to customize</li>
+            <li>Well-structured code</li>
+        </ul>
+        
+        <h2>Contact</h2>
+        <p>Get in touch with us for more information:</p>
+        <div class="contact-form">
+            <p>Email: info@example.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Address: 123 Main Street, Anytown, ST 12345</p>
+        </div>
     </div>
 </body>
 </html>
